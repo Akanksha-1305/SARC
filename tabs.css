@@ -1,0 +1,67 @@
+.tabs {
+  display: flex;
+  flex-direction: column;
+}
+
+.tab {
+  display: flex;
+  flex-direction: column;
+}
+
+.tab input[type="radio"] {
+  display: none;
+}
+
+.tab label {
+  display: block;
+  padding: 10px;
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+
+.tab [type="radio"]:checked + label {
+  background-color: #ddd;
+}
+
+.content {
+  display: none;
+  padding: 10px;
+}
+
+.tab [type="radio"]:checked ~ .content {
+  display: block;
+}
+
+.subtabs {
+  display: flex;
+  flex-direction: column;
+}
+
+.subtab {
+  display: flex;
+  flex-direction: column;
+}
+
+.subtab input[type="radio"] {
+  display: none;
+}
+
+.subtab label {
+  display: block;
+  padding: 5px;
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+.subtab [type="radio"]:checked + label {
+  background-color: #f2f2f2;
+}
+
+.subcontent {
+  display: none;
+  padding: 5px;
+}
+
+.subtab [type="radio"]:checked ~ .subcontent {
+  display: block;
+}
